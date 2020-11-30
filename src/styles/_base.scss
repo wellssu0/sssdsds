@@ -4,6 +4,7 @@
 //       避免太多重复的css代码输出
 
 @import './_var.scss';
+@import './_mixin.scss';
 
 // -------- bourbon --------
 @import '~bourbon/core/_bourbon.scss';

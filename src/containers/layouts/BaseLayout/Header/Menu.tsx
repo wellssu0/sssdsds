@@ -28,7 +28,7 @@ const Menu: FC = props => {
   return (
     <div className={styles.menuWrap}>
       {routes.map(item => (
-        <Link to={item.path} key={item.id} className={location.pathname.includes(item.path) && styles.active}>
+        <Link to={item.path} key={item.id} className={location.pathname.includes(item.path) ? styles.active : ''}>
           {intl.get(item.title)}
         </Link>
       ))}

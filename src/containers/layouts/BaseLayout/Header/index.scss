@@ -57,6 +57,51 @@
 .right {
   align-items: center;
   display: flex;
+  :global {
+    .ant-dropdown-trigger {
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(250, 250, 250, 0.5);
+      border-radius: 5px;
+      box-sizing: border-box;
+      color: #fff;
+      display: flex;
+      font-size: 20px;
+      height: 44px;
+      justify-content: space-between;
+      line-height: 44px;
+      padding: 0 15px;
+      position: relative;
+      text-align: center;
+      width: 150px;
+    }
+  }
+  .arrowDown {
+    border: 8px solid #fff;
+    border-color: #fff transparent transparent transparent;
+    height: 0;
+    position: absolute;
+    right: 15px;
+    top: 46%;
+    width: 0;
+  }
+  .avatarWrap {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 374px;
+    .username {
+      color: #fff;
+      font-size: 20px;
+      height: 40px;
+      line-height: 40px;
+      margin-right: 13px;
+      overflow: hidden;
+      text-align: right;
+      width: 280px;
+      @include ellipsis();
+    }
+  }
 }
 
 .rightIcon {

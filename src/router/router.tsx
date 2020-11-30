@@ -7,6 +7,14 @@ const loadableOptions = { fallback: <PageLoading /> };
 
 export const routes: RouteInterface[] = [
   {
+    path: '/login',
+    component: loadable(() => import(/* webpackChunkName: "login" */ '@views/Login'), loadableOptions),
+    exact: true,
+    name: 'login',
+    title: '登录',
+    auth: true
+  },
+  {
     path: '/',
     component: loadable(() => import(/* webpackChunkName: "baseLayout" */ '@layouts/BaseLayout'), loadableOptions),
     routes: [
@@ -50,14 +58,6 @@ export const routes: RouteInterface[] = [
         redirect: '/competition'
       }
     ]
-  },
-  {
-    path: '/login',
-    component: loadable(() => import(/* webpackChunkName: "login" */ '@views/Login'), loadableOptions),
-    exact: true,
-    name: 'login',
-    title: '登录',
-    auth: true
   },
   {
     path: '/404',

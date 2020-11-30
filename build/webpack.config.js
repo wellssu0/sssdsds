@@ -48,7 +48,8 @@ if (process.env.NODE_ENV === 'development') {
     host: '0.0.0.0',
     after: function () {
       openBrowser(`http://localhost:${config.devPort}`);
-    }
+    },
+    historyApiFallback: true
   };
 }
 
