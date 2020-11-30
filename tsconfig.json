@@ -19,7 +19,8 @@
       "@components/*": ["components/*"],
       "@views/*": ["containers/views/*"],
       "@layouts/*": ["containers/layouts/*"],
-      "@shared/*": ["containers/shared/*"]
+      "@shared/*": ["containers/shared/*"],
+      "@router/*": ["router/*"]
     },
     "jsx": "react",
     "alwaysStrict": true,
