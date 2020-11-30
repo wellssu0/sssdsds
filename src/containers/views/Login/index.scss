@@ -1,0 +1,37 @@
+@import '_base.scss';
+
+:export {
+  varDarkColor: $dark-color;
+}
+
+.login {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form {
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.08);
+  padding: 36px 36px 12px;
+  width: 320px;
+}
+
+.logoBox {
+  height: 50px;
+  margin: 0 auto 15px;
+  width: 160px;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.tips {
+  color: $gray-color;
+  display: flex;
+  font-size: $font-size-sm;
+  justify-content: space-around;
+  margin: -10px 0 10px 0;
+}

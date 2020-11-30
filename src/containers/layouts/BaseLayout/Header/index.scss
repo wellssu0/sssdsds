@@ -1,0 +1,66 @@
+@import '_base.scss';
+
+.header {
+  align-items: center;
+  background-color: $theme-header-bg-color;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  min-width: 1200px;
+  padding: 0 20px;
+}
+
+.trigger {
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+.left {
+  align-items: center;
+  display: flex;
+  .logoWrap {
+    height: 45px;
+    margin-right: 80px;
+    width: 140px;
+  }
+  .menuWrap {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    a {
+      background-color: $theme-header-bg-color;
+      border-radius: 22px;
+      color: #fff;
+      font-size: 20px;
+      height: 44px;
+      line-height: 44px;
+      margin-right: 10px;
+      min-width: 100px;
+      padding: 0 20px;
+      transition: all 0.3s;
+      &.active,
+      &:hover {
+        background-color: #fff;
+        border-radius: 22px;
+        color: #074b8f;
+      }
+    }
+  }
+}
+.right {
+  align-items: center;
+  display: flex;
+}
+
+.rightIcon {
+  cursor: pointer;
+  font-size: 24px;
+  margin-left: 20px;
+}
